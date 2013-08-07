@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+		<title>폰갭 준비 이벤트</title>
+    
+		<script src="cordova-2.7.0.js"></script>
+		<script>
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+
+			function onDeviceReady() {
+				navigator.splashscreen.hide();
+				
+				alert("폰갭이 준비되었습니다.");
+				
+			}
+    	</script>
+	</head>
+	<body onload="onLoad()">
+		<h1>폰갭 기본</h1>
+		<p>
+			폰갭이 준비되면 deviceready 이벤트가 발생합니다.
+		</p>
+	</body>
+</html>
